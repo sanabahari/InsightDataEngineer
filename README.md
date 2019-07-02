@@ -25,7 +25,7 @@ This code does not use any external libraries such as pandas or numpy. The stand
 
 2. The input files are located in `/input/products.csv` and `/input/order_products.csv`. The former is products order table and the latter is the product table.
 
-3. Once the inpute files are located, one should run the bash file as `.\run_sh`, which reades the driver code in the `/src/` directory.
+3. Once the inpute files are located, one should run the bash file as `.\run_sh`, which reades the driver code in the `/src/` directory. Please note, if the bash file is not executable, please run chmod +x run_sh prior to any action.
 
 4. The generated output is now located in `/output/report.csv`  and has the following form (this example is only for test data)
 
