@@ -2,6 +2,7 @@
 
 ## Table of Contents
 1. [Problem](README.md#problem)
+1. [Running the code](README.md#running-the-code)
 1. [Code verification I](README.md#Code-verification:-test-files)
 1. [Code verification II](README.md#Code-verification:-unit-test)
 1. [Programming practices](README.md#Programming-practices)
@@ -10,14 +11,23 @@
 ## Problem
 
 For this problem, we solved the challenge based on Instacart [dataset](https://www.instacart.com/datasets/grocery-shopping-2017) containing 3 million Instacart orders using Python3.
+ 
 
 The task was to determine, for each department, the number of time a product was purchased, and the number of times a product was requested for the first time and a ratio of those two numbers.
 
-To show the scalability of the code we ran the code on a desktop computer based on the train data (more than 3M data points), which was completed less than few minutes.
+To show the scalability of the code we ran the code on a desktop computer based on the train data (more than 3M data points), which was completed less than few minutes. 
 
-The input files are located in `/output/report.csv`. The former is products order table and the latter is the product table. We did not change the input files.
+This code does not use any external libraries such as pandas or numpy. The standard libraries used are `collections` and `csv`.
 
-The output, located in `/output/report.csv`  is of the following form (this example is only for test data)
+## Running the code
+
+1. copy the input files as products.csv and order_products.csv. Please note, the structure should be as the format exlpained in the `Code verification: test files` section. If the dataset is altered slightly, e.g. only few colomns are added removed, please update the constants exlpained in `Programming practices` section
+
+2. The input files are located in `/input/products.csv` and `/input/order_products.csv`. The former is products order table and the latter is the product table.
+
+3. Once the inpute files are located, one should run the bash file as `.\run_sh`, which reades the driver code in the `/src/` directory.
+
+4. The generated output is now located in `/output/report.csv`  and has the following form (this example is only for test data)
 
 ```
 department_id,number_of_orders,number_of_first_orders,percentage
@@ -35,8 +45,6 @@ Consistent with Instacart and Insight request, statistics are defined as:
 `number_of_first_orders`. How many of those requests contain products ordered for the first time?
 
 `percentage`. What is the percentage of requests containing products ordered for the first time compared with the total number of requests for products from that department? (e.g., `number_of_first_orders` divided by `number_of_orders`)
-
-This code does not use any external libraries such as pandas or numpy. The standard libraries used are `collections` and `csv`.
 
 ## Code verification: test files
 
