@@ -22,7 +22,7 @@ def orderedDict(dict1):
 
   #read csv files and convert to desired data type (list of list)
 import csv
-with open('../input/products.csv') as prod_test:
+with open('./input/products.csv') as prod_test:
     table1 = list(csv.reader(prod_test,delimiter=','))
     # get rid of header
     del table1[0]
@@ -34,7 +34,7 @@ with open('../input/products.csv') as prod_test:
 
         
 
-with open('../input/order_products.csv') as order_test:
+with open('./input/order_products.csv') as order_test:
     table2 = list(csv.reader(order_test,delimiter=','))
     # get rid of header
     del table2[0]
@@ -111,7 +111,7 @@ firstOrders = orderedDict(firstOrders)
 # the second colomn is the value i.e. number of orders, for deptID
 # the third colomn is the value i.e. i.e. number of times ordered for the first time for deptID
 # the fourth colomn is the percentage of the thirs to the second colomn written in two decimal points
-with open('../output/report.csv', 'w') as f:
+with open('./output/report.csv', 'w') as f:
     writer = csv.writer(f)
     writer.writerow(["department_id", "number_of_orders","number_of_first_orders","percentage"])
     for key in NoOrders.keys():
