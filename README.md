@@ -6,7 +6,8 @@
 1. [Code verification I](README.md#Code-verification:-test-files)
 1. [Code verification II](README.md#Code-verification:-unit-test)
 1. [Programming practices](README.md#Programming-practices)
-1. [Algorithm](README.md#algorithm)
+1. [Algorithm](README.md#algorithm
+1. [Results and Discussion](README.md#results-and-discussion)
 
 ## Problem
 
@@ -165,4 +166,7 @@ for each row `a` in table 1:
       
       place row c in table results
 
+## Results and discussion
+
+Based on the anlaysis of department No 4 has the largest number of order, and number of first orders. However, the largest percentage blongs to department No 11. This shows that products of department No 4 has a relaibale ongoing sales while department No 11 might be on the rise for new purchases.
 
