@@ -111,7 +111,7 @@ department_id,number_of_orders,number_of_first_orders2,percentage
 
 ## Code verification: unit test
 
-We generated two unit tests code to verify the main functions used in the code. Two main functions that are tested are test_hashJoin.py, which tests the function hashJoin and test_orderedDict.py, which tests the function orderedDict. The details of the hashJoin function is given below.
+We generated two unit tests code to verify the main functions used in the code. Two main functions that are tested are test_hashJoin.py, which tests the function hashJoin and test_orderedDict.py, which tests the function orderedDict. The details of the hashJoin function is given below. The testunit files are located in `/src/` directory under the mentioned names.
 
 ##  Programming practices
 
